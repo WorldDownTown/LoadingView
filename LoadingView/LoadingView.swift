@@ -134,7 +134,7 @@ extension LoadingView {
         reloadButtonPressedBlock = nil
     }
 
-    func hide() {
+    func dismiss() {
         hidden = true
         activityIndicatorView.hidden = true
         activityIndicatorView.stopAnimating()
@@ -162,8 +162,8 @@ extension LoadingView {
         showWithAdditionalY(0.0)
     }
 
-    static func hide() {
-        sharedView.hide()
+    static func dismiss() {
+        sharedView.dismiss()
         sharedView.removeFromSuperview()
     }
 
